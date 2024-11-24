@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="booking.html" class="active">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="hero-title">Book Your Adventure</h1>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Plan Your Trip</h2>
+            <p>Fill out the form below to book your Malaysian adventure.</p>
+            <form action="submit_booking.html" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="package">Select Package:</label>
+                <select id="package" name="package">
+                    <option value="basic">Basic Package</option>
+                    <option value="premium">Premium Package</option>
+                    <option value="vip">VIP Package</option>
+                </select>
+
+                <label for="dates">Travel Dates:</label>
+                <input type="date" id="dates" name="dates" required>
+
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Explore Malaysia. All rights reserved.</p>
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </footer>
+    
+</body>
+</html>
